@@ -68,19 +68,24 @@ select distinct pais,count(distinct regiao) as numero_de_regioes from tabela_pai
 ## Questão 9
 Quantas pessoas com nome começando em 'João' existem no banco?
 ```SQL
-
+select count(nome) as quant_de_Joao from tabela_paises where nome like 'João%'
 ```
 ### Resultado esperado
+![image](https://github.com/DavidSSF/atividade-III-banco-paises/assets/117132755/82f76c77-88ad-416d-a8a1-8e7064a9f53c)
+
+
 ## Questão 10
 Quantas pessoas têm o nome John?
 ```SQL
-
+select count(nome) as quant_de_John from tabela_paises where nome like 'John%'
 ```
 ### Resultado esperado
+![image](https://github.com/DavidSSF/atividade-III-banco-paises/assets/117132755/7c074198-ca8c-4149-8f4d-08544b1b6c16)
 
 ## Questão 11
 Ordene os nomes dos países sem repetição em ordem alfabética;
 ```SQL
-
+select pais from tabela_paises group by pais order by pais;
 ```
 ### Resultado esperado
+![image](https://github.com/DavidSSF/atividade-III-banco-paises/assets/117132755/5f18f5df-fad0-4c15-ab14-964b8bb4811a)
