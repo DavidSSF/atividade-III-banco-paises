@@ -77,7 +77,7 @@ select count(nome) as quant_de_Joao from tabela_paises where nome like 'João%'
 ## Questão 10
 Quantas pessoas têm o nome John?
 ```SQL
-select count(nome) as quant_de_John from tabela_paises where nome like 'John%'
+select count(nome) as quant_de_John from tabela_paises where nome like '% John %'
 ```
 ### Resultado esperado
 ![image](https://github.com/DavidSSF/atividade-III-banco-paises/assets/117132755/7c074198-ca8c-4149-8f4d-08544b1b6c16)
@@ -85,7 +85,7 @@ select count(nome) as quant_de_John from tabela_paises where nome like 'John%'
 ## Questão 11
 Ordene os nomes dos países sem repetição em ordem alfabética;
 ```SQL
-select pais from tabela_paises group by pais order by pais;
+select pais from tabela_paises order by pais;
 ```
 ### Resultado esperado
 ![image](https://github.com/DavidSSF/atividade-III-banco-paises/assets/117132755/5f18f5df-fad0-4c15-ab14-964b8bb4811a)
